@@ -11,6 +11,7 @@
     <script src="https://unpkg.com/bootstrap-table@1.18.2/dist/bootstrap-table.min.js"></script>
     <script src="https://unpkg.com/bootstrap-table@1.18.2/dist/extensions/filter-control/bootstrap-table-filter-control.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="about.css" media="screen"/>
 </head>
 
     <body>
@@ -19,6 +20,8 @@
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class"navbar-brand" hred="#">Best Car Dealership</a>
+                <button class="btn"><i class="about"></i> About Us</button>
+                <button class="btn"><i class="contact"></i> Contact Us</button>
             </div>
         </div>
     </nav>
@@ -27,9 +30,126 @@
 
     </body>
 
-</html>
 <html>
-<h1>
-Welcome to Best Cars dealership, home to the best cars in North America. We sell domestic and imported cars at reasonable prices.
-</h1>
+        <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0;
+        }
+        
+        html {
+          box-sizing: border-box;
+        }
+        
+        *, *:before, *:after {
+          box-sizing: inherit;
+        }
+        
+        .column {
+          float: left;
+          width: 33.3%;
+          margin-bottom: 16px;
+          padding: 0 8px;
+        }
+        
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          margin: 8px;
+        }
+        
+        .about-section {
+          padding: 50px;
+          text-align: center;
+          background-color: #474e5d;
+          color: white;
+        }
+        
+        .container {
+          padding: 0 16px;
+        }
+        
+        .container::after, .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        
+        .title {
+          color: grey;
+        }
+        
+        .button {
+          border: none;
+          outline: 0;
+          display: inline-block;
+          padding: 8px;
+          color: white;
+          background-color: #000;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+        }
+        
+        .button:hover {
+          background-color: #555;
+        }
+        
+        @media screen and (max-width: 650px) {
+          .column {
+            width: 100%;
+            display: block;
+          }
+        }
+        </style>
+        </head>
+        <body>
+    <div class="about-section">
+        <h1>About Us</h1>
+        <p>Welcome to Best Cars dealership, home to the best cars in North America. We sell domestic and imported cars at reasonable prices.</p>
+
+      </div>
+      
+      <h2 style="text-align:center">Our Team</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="https://media.istockphoto.com/photos/wherever-she-goes-productivity-follows-picture-id879685072?k=20&m=879685072&s=612x612&w=0&h=49lV0_5P_SXw4NGuM_LPRl5M5-6p_V3yWTJtAyf6Xpg=" alt="Jane" style="width:100%">
+            <div class="container">
+              <h2>Jane Doe</h2>
+              <p class="title">CEO & Founder</oremp>
+              <p>Founder of the BEST car dealership in Northern America. Jane hailed from a business background, here to bring to the best deals.</p>
+              
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="https://media.istockphoto.com/photos/car-dealer-standing-and-posing-in-showroom-picture-id1163423519?b=1&k=20&m=1163423519&s=170667a&w=0&h=LCobHrDTEidOMTQGEvZdfOIWE4FORFRtBhhMXxDz9Mc=" alt="Mike" style="width:100%">
+            <div class="container">
+              <h2>Mike Ross</h2>
+              <p class="title">Expert Consultant</p>
+              <p>Mike is our Expert Consultant to help you find everything you need in a vehicle. Find your perfect car.</p>
+              
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="https://media.istockphoto.com/photos/friendly-business-owner-of-his-garage-workshop-holding-a-tablet-while-picture-id1349412692?b=1&k=20&m=1349412692&s=170667a&w=0&h=QHpmk-NNr-kAfsUn3fnH524R3kwEFFhEIkN4H6ISwys=" alt="John" style="width:100%">
+            <div class="container">
+              <h2>John Doe</h2>
+              <p class="title">Expert Technician</p>
+              <p>John is our Expert Technician trained with years of experience, here to provide you the top notch service your car deserves.</p>
+              
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
 </html>
