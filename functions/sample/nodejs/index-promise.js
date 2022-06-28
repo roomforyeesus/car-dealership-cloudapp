@@ -28,7 +28,7 @@ function getDbs(cloudant) {
                  reject({ err: err });
              });
      });
- }
+}
  
  
  /*
