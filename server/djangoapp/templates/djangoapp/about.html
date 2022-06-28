@@ -19,9 +19,9 @@
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class"navbar-brand" hred="#">Best Car Dealership</a>
-                <a class="btn btn-link" href="{%url 'djangoapp:about' %}"> About Us</a>
-                <a class="btn btn-link" href="{%url 'djangoapp:contact' %}"> Contact Us</a>
+                <a class"navbar-brand" hred="#" onclick="location.href='{%url 'djangoapp:index' %}'">Best Car Dealership</a>
+                <a class="btn" href="{%url 'djangoapp:about' %}"> About Us</a>
+                <a class="btn" href="{%url 'djangoapp:contact' %}"> Contact Us</a>
             </div>
             <ul class="nav navbar-nav navbar-right">
                 {% if user.is_authenticated %}
@@ -54,6 +54,14 @@
         <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
+        h1 {
+          font-size:60px;
+          font-family: "Brush Script MT"
+        }
+        h2 {
+          font-size:40px;
+          font-family: "Brush Script MT"
+        }
         body {
           font-family: Arial, Helvetica, sans-serif;
           margin: 0;
@@ -68,7 +76,7 @@
         }
         
         .column {
-          float: left;
+          float: center;
           width: 33.3%;
           margin-bottom: 16px;
           padding: 0 8px;
@@ -80,7 +88,7 @@
         }
         
         .about-section {
-          padding: 50px;
+          padding: 30px;
           text-align: center;
           background-color: #474e5d;
           color: white;
@@ -126,7 +134,7 @@
         </head>
         <body>
     <div class="about-section">
-        <h1>About Us</h1>
+        <h1>Who We Are</h1>
         <p>Welcome to Best Cars dealership, home to the best cars in North America. We sell domestic and imported cars at reasonable prices.</p>
 
       </div>
@@ -141,7 +149,7 @@
               <p class="title">CEO & Founder</oremp>
               <p>Founder of the BEST car dealership in Northern America. Jane hailed from a business background, here to bring to the best deals.</p>
               
-              <p><button class="button">Contact</button></p>
+              <p><button class="button" onclick="location.href='{%url 'djangoapp:contact' %}'">Contact</button></p>
             </div>
           </div>
         </div>
@@ -154,7 +162,7 @@
               <p class="title">Expert Consultant</p>
               <p>Mike is our Expert Consultant to help you find everything you need in a vehicle. Find your perfect car.</p>
               
-              <p><button class="button">Contact</button></p>
+              <p><button class="button" onclick="location.href='{%url 'djangoapp:contact' %}'">Contact</button></p>
             </div>
           </div>
         </div>
@@ -167,7 +175,7 @@
               <p class="title">Expert Technician</p>
               <p>John is our Expert Technician trained with years of experience, here to provide you the top notch service your car deserves.</p>
               
-              <p><button class="button">Contact</button></p>
+              <p><button class="button" onclick="location.href='{%url 'djangoapp:contact' %}'">Contact</button></p>
             </div>
           </div>
         </div>
