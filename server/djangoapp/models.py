@@ -71,6 +71,7 @@ class CarModel(models.Model):
     def __str__(self):
         return self.type
     # - __str__ method to print a car make object
+    
 # <HINT> Create a plain Python class `CarDealer` to hold dealer data
 class CarDealer:
 
