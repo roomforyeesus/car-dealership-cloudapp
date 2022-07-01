@@ -1,17 +1,8 @@
-from datetime import datetime
-from distutils.archive_util import make_archive
-from operator import truediv
-from sre_parse import State
-from tkinter import CASCADE
-from unicodedata import name
-try:
-    from django.db import models
-except Exception:
-    print("there was an error loading django modules. do you have django installed?")
-    sys.exit()
+from django.db import models
 from django.utils.timezone import now
-from django.conf import settings
+from django.core import serializers 
 import uuid
+import json
 
 # Create your models here.
 

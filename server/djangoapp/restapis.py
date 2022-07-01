@@ -1,10 +1,8 @@
-from unicodedata import name
-from urllib import response
 import requests
 import json
-# import related models here
-from .models import CarDealer, CarMake, CarModel
+from .models import CarDealer, DealerReview
 from requests.auth import HTTPBasicAuth
+import time
 
 
 # Create a `get_request` to make HTTP GET requests
@@ -40,6 +38,16 @@ def get_request(url, **kwargs):
 
 # Create a `post_request` to make HTTP POST requests
 # e.g., response = requests.post(url, params=kwargs, json=payload)
+
+def post_request(url, payload, **kwargs):
+    print(kwargs)
+    print("POST to {} ".format(url))
+    print(payload)
+    response = requests.post(url, params=kwargs, json=payload)
+    status_code = response.status_code
+    print("With status {} ".format(status_code))
+    json_data = json.loads(response.text)
+    return json_data
 
 
 # Create a get_dealers_from_cf method to get dealers from a cloud function
