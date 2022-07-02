@@ -27,7 +27,7 @@ def get_request(url, **kwargs):
                                     params=kwargs)
     except:
         # If any error occurs
-        print("Network exception occurred")
+        print("Network exception occurred. restapi.py line 30")
 
     status_code = response.status_code
     print("With status {} ".format(status_code))
