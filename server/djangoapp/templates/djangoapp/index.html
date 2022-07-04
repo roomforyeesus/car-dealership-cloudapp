@@ -47,8 +47,14 @@
     </nav>
         <!--Add a dealer table here -->
         <div class="container">
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-warning" role="alert">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        
             <table class="table" id="table"
-                data-filter-control="True">
+                data-filter-control="true">
                 <thead>
                     <tr>
                         <th data-field="id">ID</th>
@@ -60,25 +66,20 @@
                     </tr>
                 </thead>
                  <tbody>
-                    <ul>
-                    {% if dealership_list %}
                     {% for dealer in dealership_list %}
                         <tr>
                             
                             <td>{{dealer.id}}</td>
-                            <td>{{dealer.full_name}}</td>
+                            <td><a href="{% url 'djangoapp:dealer_details' dealer.id %}">{{dealer.full_name}}</a></td>
                             <td>{{dealer.city}}</td>
                             <td>{{dealer.address}}</td>
                             <td>{{dealer.zip}}</td>
                             <td>{{dealer.st}}</td>
-                            
                         </tr>
                     {% endfor %}
-                    {% endif %}
-                    </ul>
                  </tbody>
             </table>
-        </div>
+            </div>
 
         </div>
         </body>
@@ -91,6 +92,7 @@
         </script>
         
         </html>
-
-</body>
-</htmml>
+        
+            </body>
+        
+        </html>
