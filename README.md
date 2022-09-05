@@ -1,6 +1,5 @@
 # General Information
-**link**
-https://bestcarhl.mybluemix.net/djangoapp/
+[link](https://bestcarhl.mybluemix.net/djangoapp/)
 
 
 ## Project Breakdown
